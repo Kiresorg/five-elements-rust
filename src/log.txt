@@ -1,0 +1,7 @@
+2024-03-21 10:00:00 [INFO] Application started successfully.
+2024-03-21 10:01:05 [WARNING] High memory usage detected.
+2024-03-21 10:02:30 [ERROR] Failed to connect to database.
+2024-03-21 10:03:15 [INFO] User login successful: user123.
+2024-03-21 10:04:10 [ERROR] API request timeout.
+2024-03-21 10:05:20 [INFO] Scheduled job executed.
+2024-03-21 10:06:45 [WARNING] Disk space running low.
