@@ -1,13 +1,42 @@
 {
     "version": "0.2.0",
     "configurations": [
-        {
-            "name": "Debug Rust",
-            "type": "lldb",
-            "request": "launch",
-            "program": "${workspaceFolder}/target/debug/my_project",
-            "cwd": "${workspaceFolder}",
-            "preLaunchTask": "cargo build"
-        }
+      {
+        "name": "Debug main.rs",
+        "type": "lldb",
+        "request": "launch",
+        "cargo": {
+          "args": ["build"]
+        },
+        "program": "${workspaceFolder}/target/debug/${workspaceFolderBasename}",
+        "args": [],
+        "cwd": "${workspaceFolder}",
+        "terminal": "integrated"
+      },
+      {
+        "name": "Debug five_elements.rs",
+        "type": "lldb",
+        "request": "launch",
+        "cargo": {
+          "args": ["build", "--bin", "five_elements"]
+        },
+        "program": "${workspaceFolder}/target/debug/five_elements",
+        "args": [],
+        "cwd": "${workspaceFolder}",
+        "terminal": "integrated"
+      },
+      {
+        "name": "Debug thread_counter",
+        "type": "lldb",
+        "request": "launch",
+        "cargo": {
+          "args": ["build", "--bin", "thread_counter"]
+        },
+        "program": "${workspaceFolder}/target/debug/thread_counter",
+        "args": [],
+        "cwd": "${workspaceFolder}",
+        "terminal": "integrated"
+      }
     ]
-}
+  }
+  
