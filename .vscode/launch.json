@@ -72,6 +72,18 @@
         "args": [],
         "cwd": "${workspaceFolder}",
         "terminal": "integrated"
+      },
+      {
+        "name": "Debug matrix_safe_wrapper.rs",
+        "type": "lldb",
+        "request": "launch",
+        "cargo": {
+          "args": ["build", "--bin", "matrix_safe_wrapper"]
+        },
+        "program": "${workspaceFolder}/target/debug/matrix_safe_wrapper",
+        "args": [],
+        "cwd": "${workspaceFolder}",
+        "terminal": "integrated"
       }
     ]
   }
