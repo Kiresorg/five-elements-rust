@@ -60,6 +60,18 @@
         "args": [],
         "cwd": "${workspaceFolder}",
         "terminal": "integrated"
+      },
+      {
+        "name": "Debug renderable_logs.rs",
+        "type": "lldb",
+        "request": "launch",
+        "cargo": {
+          "args": ["build", "--bin", "renderable_logs"]
+        },
+        "program": "${workspaceFolder}/target/debug/renderable_logs",
+        "args": [],
+        "cwd": "${workspaceFolder}",
+        "terminal": "integrated"
       }
     ]
   }
